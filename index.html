@@ -1,42 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./main.js" defer></script>
+  </head>
   
-  <title>Frontend Mentor | Intro component with sign up form</title>
+  <body class="page">
+    <main>
+      <div class="inner">
+        <div class="intro">
+          <h1 class="title">Learn to code by watching others</h1>
+          <p class="text--lead"> See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+        </div>
+        <div class="promo">
+          <p class="text--promo"><span class="text--bold">Try it free 7 days</span> then $20/mo. thereafter</p>
+        </div>
+        <form class="form">
+          <div class="form__box"> 
+            <lebel class="visually-hidden" for="first-name">First Name</lebel>
+            <input id="first-name" class="input" name="firstName" type="text" placeholder="First Name" />
+          </div>
+          <div class="" aria-live="polite"></div>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+          <div class="form__box"> 
+            <lebel class="visually-hidden" for="last-name">Last Name</lebel>
+            <input id="last-name" class="input" name="lastName" type="text" placeholder="Last Name" />
+          </div>
+          <div class="" aria-live="polite"></div>
 
-  Learn to code by watching others
+          <div class="form__box">
+            <lebel class="visually-hidden" for="email">Email</lebel>
+            <input id="email" class="input" name="email" type="text" placeholder="Email Address" />
+          </div>
+          <div class="" aria-live="polite"></div>
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
+          <div class="form__box">
+            <lebel class="visually-hidden" for="password">Password</lebel>
+            <input id="password" class="input" name="password" type="text" autocomplete="off" placeholder="Password" />
+          </div>
+          <div class="" aria-live="polite"></div>
 
-  Try it free 7 days then $20/mo. thereafter
-
-  First Name 
-  Last Name 
-  Email Address
-  Password
-
-  Claim your free trial 
-
-  By clicking the button, you are agreeing to our Terms and Services
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+          <div class="form__box">
+            <button class="button">Claim your free trial</button>
+            <p class="text--terms">By clicking the button, you are agreeing to our <a href="#" class="text--red">Terms and Services</a href="#"></p>              
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
 </html>
